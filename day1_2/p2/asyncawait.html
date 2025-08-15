@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>async await</title>
+  </head>
+  <body>
+    <script>
+      function delay(ms) {
+        return new Promise((resolve) => {
+          setTimeout(() => {
+            resolve("Done after " + ms + "ms");
+          }, ms);
+        });
+      }
+
+    //   console.log("Starting delay...");
+    //   delay(3000).then((message) => console.log(message));
+      let count = 1;
+      async function asyncDelay(time) {
+        console.log(`Task ${count} `);
+        const message = await delay(time);
+        console.log(`Task ${count++} done`);
+        console.log(message);
+      }
+      async function runSequential() {
+        await asyncDelay(1000);
+        await asyncDelay(2000);
+        await asyncDelay(1000);
+      }
+      runSequential();
+    </script>
+  </body>
+</html>

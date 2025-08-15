@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      // Bài 1: hien thi ten
+      let name = "An";
+      let age = 25;
+
+      console.log(`My name is ${name} and I am ${age} years old.`); // Xem ở Console
+    //   alert(`My name is ${name} and I am ${age} years old.`); // Popup
+      document.write(`My name is ${name} and I am ${age} years old. `); // In trên trang
+
+      // bai 2: Tính diện tích hình chữ nhật
+         let width = 5;
+        let height = 10;
+        let area = width * height;
+        document.write("Dien tich hinh chu nhat la: " + area); // In trên trang
+      // bai 3: Kiểm tra số chẵn lẻ
+              let n = 11;
+        if(n % 2 === 0) {
+            document.write(n + " is an even number."); // In trên trang
+        } else {
+            document.write(n + " is an odd number."); // In trên trang
+        }
+      // bai 4: Chuyen doi Celsius sang Fahrenheit
+        let celsius = 25;
+        let fahrenheit = (celsius * 9/5) + 32;
+        document.write("Celsius to Fahrenheit: " + fahrenheit + "°F"); // In trên trang
+      // bai 5: Tinh giai thừa
+        let num = 5;
+        let factorial = 1;
+        for(let i = 1; i <= num; i++) {
+            factorial *= i;
+        }
+        document.write("Factorial of " + num + " is: " + factorial); // In trên trang
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // In ra ra mang số
+      const numbers = [1, 2, 3, 4, 5];
+      document.write("Array of numbers: " + numbers.join(", ") + "<br>"); // In trên trang
+
+      // Sua mang
+      const students = ["An", "Bình", "Chi", "Dũng"];
+      students.push("Ha");
+      students.splice(0, 1); // Xóa phần tử thứ 1, o: position, 1: số lượng
+      document.write("Array of student: " + students.join(", ") + "<br>"); // In trên trang
+
+      // loc mang
+      const scores = [8, 9, 5, 10, 7];
+      const highScores = scores.filter((score) => score >= 8);
+      document.write("High scores: " + highScores.join(", ") + "<br>"); // In trên trang
+
+      // destructuring
+      const person = { name: "An", age: 20, city: "HCM" };
+      document.writeln(
+        `Name: ${person.name}, Age: ${person.age}, City: ${person.city}<br>`
+      ); // In trên trang
+
+      // destructuring avg object
+      const person1 = { name: "Nam", math: 8, english: 7 };
+      const avgScore = (person1.math + person1.english) / 2;
+        document.writeln(
+            `Average score of ${person1.name} is: ${avgScore}<br>`
+        ); // In trên trang
+    </script>
+  </body>
+</html>

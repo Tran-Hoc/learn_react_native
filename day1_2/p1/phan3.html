@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = 5;
+      let b = 10;
+      let sum = (a, b) => a + b;
+      document.writeln(`Sum of ${a} and ${b} is: ${sum(a, b)}<br>`); // In trên trang
+
+      // spread operator
+      const obj1 = { a: 1, b: 2 };
+      const obj2 = { b: 3, c: 4 };
+      const mergedObj = { ...obj1, ...obj2 };
+      document.writeln(`Merged object: ${JSON.stringify(mergedObj)}<br>`); // In trên trang
+
+      // filter obj array
+      const users = [
+        { name: "An", age: 25 },
+        { name: "Bình", age: 30 },
+        { name: "Chi", age: 22 },
+      ];
+
+      const filteredUsers = users.filter((user) => user.age > 23);
+      document.writeln(
+        `Users older than 23: ${filteredUsers
+          .map((user) => user.name)
+          .join(", ")}<br>`
+      ); // In trên trang
+
+      // show number 1 to 100: 3is Fizz, 5 is Buzz, 3 and 5 is FizzBuzz
+      for (let i = 1; i <= 100; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+          document.writeln("<br>" + i + " FizzBuzz<br>"); // In trên trang
+        } else if (i % 3 === 0) {
+          document.writeln("<br>" + i + " Fizz<br>"); // In trên trang
+        } else if (i % 5 === 0) {
+          document.writeln("<br>" + i + " Buzz<br>"); // In trên trang
+        }
+      }
+    </script>
+  </body>
+</html>

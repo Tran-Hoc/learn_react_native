@@ -1,0 +1,6 @@
+Tạo component NewsList → fetch dữ liệu → hiển thị.
+
+Xử lý khi click → xem chi tiết.
+
+Bonus: nút quay lại, loading, lỗi.
+
