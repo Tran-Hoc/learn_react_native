@@ -49,11 +49,11 @@ Ngày 10: Gọi API  ✔
 
 fetch, axios, loading, error handling
 
-Ngày 11: Quản lý trạng thái  
+Ngày 11: Quản lý trạng thái    ✔
 
 Context API hoặc Redux Toolkit
 
-Ngày 12–13: Project 1 – Todo App
+Ngày 12–13: Project 1 – Todo App  ✔
 
 Thêm/sửa/xoá công việc
 

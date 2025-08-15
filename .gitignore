@@ -1,0 +1,61 @@
+# Node modules
+node_modules/
+
+# React Native packager cache
+.expo/
+.expo-shared/
+npm-debug.*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+pnpm-lock.yaml
+
+# Metro bundler cache
+.cache/
+metro-cache/
+
+# iOS build
+ios/Pods/
+ios/build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xcuserstate
+*.xcworkspace
+DerivedData/
+
+# Android build
+android/.gradle/
+android/app/build/
+android/build/
+*.apk
+*.aar
+*.iml
+local.properties
+.gradle/
+android/
+android/.cxx/
+android/build/
+android/app/build/
+
+
+# VSCode settings
+.vscode/
+
+# Mac system files
+.DS_Store
+
+
+
+
+# Misc
+.env
+
+
+
