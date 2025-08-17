@@ -55,12 +55,12 @@ Context API hoặc Redux Toolkit
 
 Ngày 12–13: Project 1 – Todo App  ✔
 
-Thêm/sửa/xoá công việc
+Thêm/sửa/xoá công việc 
 
-Lưu dữ liệu với AsyncStorage
+Lưu dữ liệu với AsyncStorage 
 
 # 📅 Tuần 3 – Chức năng nâng cao (7 ngày)
-Ngày 14–15: Form & Validation
+Ngày 14–15: Form & Validation - pending
 
 Formik + Yup
 
