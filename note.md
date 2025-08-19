@@ -1,4 +1,6 @@
-asyncStorage: is an unencrypted, asynchronous, persistent, key-value, storage system that is global to the app. It should be used instead of Localstorage
+# npm run start
+
+# Redux
 
 Redux is a JS library for predixtable and maintainable global state management.
 Redux toolkit is an approach for writing Redux logic.
@@ -44,8 +46,8 @@ Sử dụng useEffect với dependency array trống ([]) để lấy dữ liệ
 
 Sử dụng useEffect với dependency array chứa biến ([data]) để lưu dữ liệu mỗi khi biến đó thay đổi.
 
-
 example:
+
 ```
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useEffect, useState } from "react";
@@ -77,3 +79,39 @@ function NoteScreen() {
 
 export default NoteScreen;
 ```
+
+---
+
+# formik
+
+form thư viện có sẵn các thành phần hỗ trợ form cho react-react native.
+sử dụng: cần truyền các tham số như giá trị khởi tạo, xác thực, hành động khi gửi form.
+phần thân có các tham số đầu vào để điều chỉnh form: handleChange, handleBlur, handleSubmit, values, errors, touched. sử dụng các tham số trong text input.
+trong phần Text input: secureTextEntry(ẩn đi thông tin nhập vào thành \* )
+sủ dụng toán tử điều kiện để hiển thị lỗi cho người dùng phía bên dưới TextInput
+```
+{errors.email && touched.email && (
+    <Text style={styles.error}>{errors.email}</Text>
+)}
+```
+
+
+# Yup
+
+thư viện hỗ trợ việc xác thực, và được gọi trong formik.
+sử dụng: đặt tên các trường các xác thực, kiểu dữ liệu, điều kiện xác thực(email, min, max, ... )
+
+
+# Media
+sử dụng camera: ImagePicker.launchCameraAsync
+
+lấy hình trong thư viện:  ImagePicker.launchImageLibraryAsync
+hàm bất đồng bộ sự dụng async await.
+
+
+# Authen
+sử dụng firebase: mọi thứ đã được setup sẵn trên firebase. 
+Khi sử dụng chỉ cần gọi  signInWithEmailAndPassword(auth, email, password); truyền đầy đủ tham số, form từ formik và yup. 
+
+
+

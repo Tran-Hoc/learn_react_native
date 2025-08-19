@@ -60,21 +60,22 @@ Thêm/sửa/xoá công việc
 Lưu dữ liệu với AsyncStorage 
 
 # 📅 Tuần 3 – Chức năng nâng cao (7 ngày)
-Ngày 14–15: Form & Validation - pending
+Ngày 14–15: Form & Validation - pending  ✔
 
 Formik + Yup
 
-Login/Register form
+Login/Register form 
 
-Ngày 16–17: Media
+Ngày 16–17: Media  ✔
+
 
 Image picker, camera
 
 Upload ảnh lên server
 
-Ngày 18–19: Authentication
+Ngày 18–19: Authentication  ✔
 
-Firebase Auth hoặc API backend
+Firebase Auth  ✔ hoặc API backend
 
 Ngày 20: Project 2 – E-commerce mini
 
