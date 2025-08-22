@@ -16,7 +16,7 @@ Dispatch: mọi hoạt động cần thông qua hàm này. Dispatch đảm nhậ
 
 - example: UI (click chuột) -> gọi dispatch(ation) -> store nhận action chuyển vào Reducer -> reducer nhận state và action, thực hiện tính toán và trả về state mới -> store cập nhật state hiện tại từ kết quả của reducer -> Store đã thay đổi trạng thái . Những UI được kết nối với store thực hiện cập nhật để hiển thị dữ liệu mới.
 
-UI -> Action-> Dispatch -> Store -> Reducer -> Store -> UI.
+UI -> Action -> Dispatch -> Store -> Reducer -> Store -> UI.
 
 Provider: bọc component gốc và chuyển vào store để quản lý.
 
@@ -24,7 +24,7 @@ Provider: bọc component gốc và chuyển vào store để quản lý.
 
 2. Kết nối ứng dụng: Dùng < Provider > để bao bọc toàn bộ ứng dụng và truyền Store vào.
 
-3. Lấy dữ liệu: Trong bất kỳ component nào, sử dụng hook useSelector để lấy một phần dữ liệu từ Store.
+3. Lấy dữ liệu: Trong bất kỳ component nào, sử dụng hook useSelector để lấy dữ liệu từ Store.
 
 4. Thay đổi dữ liệu: Khi có sự kiện xảy ra, sử dụng hook useDispatch để gọi hàm dispatch và gửi một Action tới Store.
 
@@ -112,6 +112,9 @@ hàm bất đồng bộ sự dụng async await.
 # Authen
 sử dụng firebase: mọi thứ đã được setup sẵn trên firebase. 
 Khi sử dụng chỉ cần gọi  signInWithEmailAndPassword(auth, email, password); truyền đầy đủ tham số, form từ formik và yup. 
+
+# Navigator
+## Stack navigator
 
 
 

@@ -1,0 +1,81 @@
+import { Product } from "@/type";
+
+export const MOCK_PRODUCTS: Product[] = [
+  {
+    id: 1,
+    name: "Áo thun cơ bản",
+    price: 150000,
+    imageUrl: "https://placehold.net/400x400.png",
+    description: "Áo thun cotton 100%, thoáng mát, phù hợp mặc hàng ngày.",
+  },
+  {
+    id: 2,
+    name: "Quần jeans slim fit",
+    price: 350000,
+    imageUrl: "https://placehold.net/400x400.png",
+    description: "Chất liệu denim co giãn, phom dáng slim fit hiện đại.",
+  },
+  {
+    id: 3,
+    name: "Giày sneaker trắng",
+    price: 500000,
+    imageUrl: "https://placehold.net/400x400.png",
+    description: "Giày thể thao basic, dễ phối đồ, đế cao su chống trượt.",
+  },
+  {
+    id: 4,
+    name: "Túi xách da",
+    price: 800000,
+    imageUrl: "https://placehold.net/400x400.png",
+    description: "Túi xách da cao cấp, thiết kế sang trọng, phù hợp đi làm.",
+  },
+    {
+    id: 5,
+    name: "Áo sơ mi trắng",
+    price: 250000,
+    imageUrl: "https://placehold.net/400x400.png",
+    description: "Áo sơ mi cotton thoáng mát, phù hợp môi trường công sở.",
+  },
+  {
+    id: 6,
+    name: "Áo thun basic",
+    price: 150000,
+    imageUrl: "https://placehold.net/400x400.png",
+    description: "Áo thun cotton 100%, thoải mái và dễ phối đồ.",
+  },
+  {
+    id: 7,
+    name: "Quần short kaki",
+    price: 220000,
+    imageUrl: "https://placehold.net/400x400.png",
+    description: "Quần short nam kaki, phong cách trẻ trung, năng động.",
+  },
+  {
+    id: 8,
+    name: "Mũ lưỡi trai",
+    price: 120000,
+    imageUrl: "https://placehold.net/400x400.png",
+    description: "Mũ lưỡi trai unisex, chất liệu cotton, dễ phối đồ.",
+  },
+  {
+    id: 9,
+    name: "Đồng hồ thời trang",
+    price: 950000,
+    imageUrl: "https://placehold.net/400x400.png",
+    description: "Đồng hồ dây da, thiết kế tối giản và sang trọng.",
+  },
+  {
+    id: 10,
+    name: "Áo khoác bomber",
+    price: 600000,
+    imageUrl: "https://placehold.net/400x400.png",
+    description: "Áo khoác bomber cá tính, giữ ấm tốt, dễ phối nhiều outfit.",
+  },
+  {
+    id: 11,
+    name: "Ba lô laptop",
+    price: 450000,
+    imageUrl: "https://placehold.net/400x400.png",
+    description: "Ba lô chống nước, nhiều ngăn tiện dụng, phù hợp đi học & đi làm.",
+  },
+];
