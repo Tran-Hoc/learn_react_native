@@ -1,26 +1,27 @@
-import {
-  DarkTheme,
-  DefaultTheme,
-  ThemeProvider,
-} from "@react-navigation/native";
-import { useFonts } from "expo-font";
-import { Stack } from "expo-router";
-import { StatusBar } from "expo-status-bar";
-import "react-native-reanimated";
+import { Provider } from "react-redux";
+import { store } from "@/src/store";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { RootStackParamList } from "@/src/navigation/RootStackParamList";
+import ProductList from "./(screens)/ProductList";
+import ProductDetail from "./(screens)/ProductDetail";
+import Cart from "./(screens)/Cart";
+import Checkout from "./(screens)/Checkout";
 
-import { useColorScheme } from "@/hooks/useColorScheme";
-import AppNavigator from "./stack/AppNavigator";
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
 export default function RootLayout() {
-  const colorScheme = useColorScheme();
-  const [loaded] = useFonts({
-    SpaceMono: require("../assets/fonts/SpaceMono-Regular.ttf"),
-  });
-
-  if (!loaded) {
-    // Async font loading only occurs in development.
-    return null;
-  }
-
-  return <AppNavigator />;
+  return (
+    <Provider store={store}>
+      <Stack.Navigator initialRouteName="ProductList">
+        <Stack.Screen
+          name="ProductList"
+          component={ProductList}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen name="ProductDetail" component={ProductDetail} />
+        <Stack.Screen name="Cart" component={Cart} />
+        <Stack.Screen name="Checkout" component={Checkout} />
+      </Stack.Navigator>
+    </Provider>
+  );
 }

@@ -77,12 +77,12 @@ Ngày 18–19: Authentication  ✔
 
 Firebase Auth  ✔ hoặc API backend
 
-Ngày 20: Project 2 – E-commerce mini - pending
+Ngày 20: Project 2 – E-commerce mini ✔
 
 Danh sách sản phẩm, giỏ hàng, thanh toán giả lập
 
 # 📅 Tuần 4 – Hoàn thiện + Triển khai (8–10 ngày)
-Ngày 21–23: Tối ưu
+Ngày 21–23: Tối ưu 
 
 Lazy loading, memoization, VirtualizedList
 
