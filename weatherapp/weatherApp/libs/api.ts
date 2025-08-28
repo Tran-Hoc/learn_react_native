@@ -22,7 +22,7 @@ export const getWeather = async (city: string): Promise<WeatherResponse> => {
     const icon = data.current.condition.icon;
     const country = data.location.country;
     const location = data.location.name;
-    console.log("Current weather:", data);
+    // console.log("Current weather:", data);
     const weather: WeatherResponse = {
       temperature,
       description,
@@ -56,7 +56,7 @@ export const getForecast = async (city: string): Promise<ForecastItem[]> => {
       },
     });
 
-    console.log(response);
+    // console.log(response);
     return response.data.forecast.forecastday;
   } catch (error) {
     console.error("Error fetching forecast data:", error);
